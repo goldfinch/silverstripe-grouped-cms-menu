@@ -173,7 +173,7 @@ class GroupedCmsMenu extends LeftAndMainExtension
 
         if (!empty($groupSettings[$group]['icon_class']))
         {
-            return 'font-icon-' . (!empty($groupSettings[$group]['icon_class']) ? $groupSettings[$group]['icon_class'] : '');
+            return (!empty($groupSettings[$group]['icon_class']) ? $groupSettings[$group]['icon_class'] : '');
         }
 
         return 'font-icon-' . (!empty($groupSettings[$group]['icon']) ? $groupSettings[$group]['icon'] : '');

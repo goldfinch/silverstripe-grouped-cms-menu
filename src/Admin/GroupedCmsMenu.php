@@ -171,6 +171,11 @@ class GroupedCmsMenu extends LeftAndMainExtension
             return $class::create()->config()->get('menu_icon_class');
         }
 
+        if (!empty($groupSettings[$group]['icon_class']))
+        {
+            return 'font-icon-' . (!empty($groupSettings[$group]['icon_class']) ? $groupSettings[$group]['icon_class'] : '');
+        }
+
         return 'font-icon-' . (!empty($groupSettings[$group]['icon']) ? $groupSettings[$group]['icon'] : '');
     }
 

@@ -43,7 +43,7 @@ class GroupedCmsMenu extends LeftAndMainExtension
     {
         parent::init();
 
-        Requirements::css('symbiote/silverstripe-grouped-cms-menu:client/dist/css/GroupedCmsMenu.css');
+        Requirements::css('goldfinch/silverstripe-grouped-cms-menu:client/dist/css/GroupedCmsMenu.css');
     }
 
     /**

@@ -1,5 +1,7 @@
 # SilverStripe Grouped CMS Menu
 
+* This is form of [symbiote/silverstripe-grouped-cms-menu](https://github.com/symbiote/silverstripe-grouped-cms-menu)
+
 This module allows you to group CMS menu items into nested lists which expand when hovered over. This is useful when 
 there are so many CMS menu items that screen space becomes an issue.
 

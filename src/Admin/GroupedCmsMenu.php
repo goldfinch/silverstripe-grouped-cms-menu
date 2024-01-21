@@ -115,6 +115,7 @@ class GroupedCmsMenu extends LeftAndMainExtension
 
                 $result->push(ArrayData::create([
                     'Title'       => $this->getTitle($group, $code),
+                    'Priority'    => $children->first()->Priority,
                     'IconClass'   => $iconClass,
                     'HasCSSIcon'  => strtolower($code),
                     'Code'        => DBField::create_field(DBText::class, $code),

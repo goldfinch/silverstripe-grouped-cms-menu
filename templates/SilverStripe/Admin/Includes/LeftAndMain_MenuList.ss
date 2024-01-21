@@ -1,6 +1,6 @@
 <ul class="cms-menu__list">
 <% loop $GroupedMainMenu %>
-    <li class="$LinkingMode $FirstLast<% if $Children %> children <% end_if %><% if $LinkingMode == 'link' %><% else %>opened<% end_if %>" id="Menu-$Code" title="$Title.ATT">
+    <li data-menu-priority="$Priority" class="$LinkingMode $FirstLast<% if $Children %> children <% end_if %><% if $LinkingMode == 'link' %><% else %>opened<% end_if %>" id="Menu-$Code" title="$Title.ATT">
         <a href="$Link" $AttributesHTML>
             <% include Includes/GroupedCmsMenu/MenuIcon %>
             <span class="text">$Title</span>
@@ -20,3 +20,4 @@
     </li>
 <% end_loop %>
 </ul>
+    
